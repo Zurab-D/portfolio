@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Мои работы</title>
+    <meta name="description" content="Учебные работы dzn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .games {
+        margin-left: 40px;
+        font-weight: bold;
+        line-height: 35px;
+        width: 100px;
+      }
+      .btn {
+        display: inline-block;
+        border: 1px solid #333;
+        background: #777;
+        box-shadow: 0 0 5px 0 #777;
+        border-radius: 3px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+      .btn:active {
+        box-shadow: inset 0 0 5px 0 #555;
+      }
+      li {
+        list-style: none;
+      }
+      li li {
+        padding-top: 5px;
+        font-weight: bold;
+      }
+      div>ul>li {
+        padding-top: 15px;
+      }
+      i {
+        display: none;
+      }
+      label{
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      /*
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"]:not(:checked) ~ ul {
+        height: 0;
+        overflow: hidden;
+      }
+      input[type="radio"]:not(:checked) ~ label i {
+        display: inline;
+      }
+      */
+
+      input[type="checkbox"] {
+        display: none;
+      }
+      input[type="checkbox"]:checked ~ ul {
+        height: 0;
+        overflow: hidden;
+      }
+      input[type="checkbox"]:checked ~ label i {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body style="font-family: sans-serif;">
+    <div>
+        <a class="games btn" href="_Games">Игры</a>
+        <ul>
+            <li> <input type="checkbox" id="barbershop" name="checkbox" checked><label for="barbershop">Барбершоп<i> ...</i></label>
+              <ul>
+                <li><a href="../barbershop/index.html">index.html</a></li>
+                <li><a href="../barbershop/shop.html">shop.html</a><br></li>
+                <li><a href="../barbershop/item.html">item.html</a><br></li>
+                <li><a href="../barbershop/price.html">price.html</a><br></li>
+              </ul>
+            </li>
+            <li> <input type="checkbox" id="tehnomart" name="checkbox" checked><label for="tehnomart">Техномарт<i> ...</i></label>
+              <ul>
+                <li><a href="../technomart/index.html">index.html</a><br></li>
+                <li><a href="../technomart/catalog.html">catalog.html</a><br></li>
+                <li><a href="../technomart/form.html">form.html</a><br></li>
+                <li><a href="../technomart/added.html">added.html</a><br></li>
+                <li><a href="../technomart/map.html">map.html</a><br></li>
+              </ul>
+            </li>
+            <li> <input type="checkbox" id="sedona" name="checkbox" checked><label for="sedona">Седона<i> ...</i></label>
+              <ul>
+                <li><a href="../sedona/index.html">index.html</a></li>
+                <li><a href="../sedona/form.html">form.html</a></li>
+                <li><a href="../sedona/blog.html">blog.html</a></li>
+                <li><a href="../sedona/post.html">post.html</a></li>
+                <li><a href="../sedona/404.html">404.html</a></li>
+              </ul>
+            </li>
+            <li> <input type="checkbox" id="pink" name="checkbox" checked><label for="pink">Pink<i> ...</i></label>
+              <ul>
+                <li><a href="../pink/index.html">index.html</a></li>
+                <li><a href="../pink/form.html">form.html</a><br></li>
+                <li><a href="../pink/blog.html">blog.html</a><br></li>
+                <li><a href="../pink/post.html">post.html</a><br></li>
+              </ul>
+            </li>
+            <li> <input type="checkbox" id="fudi" name="checkbox" checked><label for="fudi">Fudi<i> ...</i></label>
+              <ul>
+                <li><a href="../fudi/index.html">index.html</a></li>
+              </ul>
+            </li>
+            <li> <input type="checkbox" id="modest" name="checkbox" checked><label for="modest">Modest<i> ...</i></label>
+              <ul>
+                <li><a href="../modest/index.html">index.html</a></li>
+              </ul>
+            </li>
+
+        </ul>
+    </div>
+  </body>
+</html>
